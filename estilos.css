@@ -1,0 +1,189 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #183044;
+  background: #f3f7f8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.contenedor {
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.encabezado {
+  padding: 44px 0 54px;
+  color: white;
+  background: linear-gradient(120deg, #103b4b, #137c88);
+}
+
+.encabezado h1 {
+  margin: 8px 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.encabezado p {
+  margin-bottom: 0;
+}
+
+.marca,
+.etiqueta {
+  font-size: 0.78rem;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+}
+
+main {
+  position: relative;
+  margin-top: -25px !important;
+  padding-bottom: 32px;
+}
+
+.tarjeta {
+  margin-bottom: 18px;
+  padding: 25px;
+  border: 1px solid #e1e9eb;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 8px 25px rgba(14, 54, 66, 0.06);
+}
+
+.tarjeta h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.etiqueta {
+  color: #087987;
+}
+
+.columnas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.aviso {
+  border-left: 5px solid #efa843;
+  background: #fffaf1;
+}
+
+.barra {
+  height: 12px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #dcebed;
+}
+
+#progreso {
+  width: 50%;
+  height: 100%;
+  border-radius: 20px;
+  background: #19a5a2;
+}
+
+.etapas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.etapa {
+  padding: 14px;
+  border: 1px solid #dae5e7;
+  border-radius: 12px;
+  background: #f7fafb;
+}
+
+.etapa.completada {
+  border-color: #b8dfd8;
+  background: #e8f7f2;
+}
+
+.etapa.actual {
+  border-color: #0e8790;
+  background: #e6f5f6;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: bold;
+}
+
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #b9cbd0;
+  border-radius: 9px;
+  background: white;
+  font: inherit;
+}
+
+button {
+  margin-top: 16px;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 9px;
+  color: white;
+  background: #0d7582;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #095965;
+}
+
+#confirmacion {
+  color: #087057;
+  font-weight: bold;
+}
+
+footer {
+  padding: 22px;
+  color: #627580;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 650px) {
+  .columnas,
+  .etapas {
+    grid-template-columns: 1fr;
+  }
+
+  .tarjeta {
+    padding: 20px;
+  }
+}
+.encabezado-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.logo-enlight {
+width: 320px;
+height: 175px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .logo-enlight {
+    width: 120px;
+    height: 80px;
+  }
+}
